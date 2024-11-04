@@ -3,48 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soy Milk Shop</title>
+    <title>Homemade Soy Milk</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Header with Navigation -->
     <header>
-        <h1>Soy Milk Shop</h1>
         <nav>
-            <a href="#products">Products</a>
-            <a href="#cart">Cart (<span id="cart-count">0</span>)</a>
+            <h1>Homemade Soy Milk</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    
-    <main>
-        <section id="products">
-            <h2>Our Soy Milk Products</h2>
-            <div class="product" data-name="Original Soy Milk" data-price="5.00">
-                <h3>Original Soy Milk</h3>
-                <p>Freshly made, smooth, and delicious.</p>
-                <button class="add-to-cart">Add to Cart - $5.00</button>
-            </div>
-            <div class="product" data-name="Vanilla Soy Milk" data-price="6.00">
-                <h3>Vanilla Soy Milk</h3>
-                <p>Sweetened with natural vanilla.</p>
-                <button class="add-to-cart">Add to Cart - $6.00</button>
-            </div>
-            <div class="product" data-name="Chocolate Soy Milk" data-price="6.50">
-                <h3>Chocolate Soy Milk</h3>
-                <p>Rich chocolate flavor for a treat.</p>
-                <button class="add-to-cart">Add to Cart - $6.50</button>
-            </div>
-        </section>
-        
-        <section id="cart">
-            <h2>Your Cart</h2>
-            <ul id="cart-items"></ul>
-            <p id="total-price">Total: $0.00</p>
-            <button id="checkout">Checkout</button>
-        </section>
-    </main>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Discover the Purest Homemade Soy Milk</h2>
+        <p>Delicious, Nutritious, Dairy-Free</p>
+        <button onclick="location.href='#shop'">Shop Now</button>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+        <h3>Why Choose Homemade Soy Milk?</h3>
+        <div class="benefits-list">
+            <div class="benefit-item">
+                <h4>Natural Ingredients</h4>
+                <p>Fresh, wholesome, and free of preservatives.</p>
+            </div>
+            <div class="benefit-item">
+                <h4>Sustainable</h4>
+                <p>Eco-friendly and low carbon footprint.</p>
+            </div>
+            <div class="benefit-item">
+                <h4>Health Benefits</h4>
+                <p>Rich in protein, fiber, and helps reduce cholesterol.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop" class="shop">
+        <h3>Our Products</h3>
+        <div class="product">
+            <img src="soy_milk.jpg" alt="Fresh Homemade Soy Milk">
+            <h4>Homemade Soy Milk</h4>
+            <p>500ml of pure, fresh, homemade soy milk</p>
+            <p><strong>$5.00</strong></p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h3>About Us</h3>
+        <p>Our journey started with a simple idea: create the best homemade soy milk. We are passionate about providing natural, delicious, and nutritious soy milk alternatives.</p>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Soy Milk Shop</p>
+        <p>© 2023 Homemade Soy Milk | Follow us on <a href="#">Instagram</a> and <a href="#">Facebook</a></p>
     </footer>
 
     <script src="script.js"></script>
